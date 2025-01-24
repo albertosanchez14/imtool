@@ -2,12 +2,14 @@
 
 ## Description
 
-This project is part of the Computer Architecture course at University Carlos III of Madrid. It involves the development of an image processing application in PPM format, optimized for performance in C++20.
+Imtool is an image processing tool designed to work with PPM format images. Developed as part of the Computer Architecture course at Universidad Carlos III de Madrid, this project focuses on optimizing image transformations using C++20. It explores two different data organization strategies to evaluate their impact on performance and energy efficiency.
 
-Two versions of the application have been developed:
+The project features two implementations:
 
-- **imtool-soa**: Implementation based on Structure of Arrays (SOA).
-- **imtool-aos**: Implementation based on Array of Structures (AOS).
+- **imtool-soa**: Uses the Structure of Arrays (SOA) approach.
+- **imtool-aos**: Uses the Array of Structures (AOS) approach.
+
+By comparing these two implementations, the project provides insights into memory access patterns and computational efficiency in image processing tasks.
 
 ## Features
 
