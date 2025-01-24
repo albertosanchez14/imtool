@@ -1,41 +1,41 @@
 # imtool
 
-## Descripción
+## Description
 
-Este proyecto forma parte de la asignatura de Arquitectura de Computadores de la Universidad Carlos III de Madrid. Consiste en el desarrollo de una aplicación de procesamiento de imágenes en formato PPM, optimizada para rendimiento en C++20.
+This project is part of the Computer Architecture course at Universidad Carlos III de Madrid. It involves the development of an image processing application in PPM format, optimized for performance in C++20.
 
-Se han desarrollado dos versiones de la aplicación:
+Two versions of the application have been developed:
 
-- **imtool-soa**: Implementación basada en Structure of Arrays (SOA).
-- **imtool-aos**: Implementación basada en Array of Structures (AOS).
+- **imtool-soa**: Implementation based on Structure of Arrays (SOA).
+- **imtool-aos**: Implementation based on Array of Structures (AOS).
 
-## Funcionalidades
+## Features
 
-La aplicación permite realizar las siguientes operaciones sobre imágenes PPM:
+The application allows performing the following operations on PPM images:
 
-- **info**: Obtener metadatos de una imagen.
-- **maxlevel**: Escalar el número de niveles de intensidad de color.
-- **resize**: Escalar el tamaño de la imagen usando interpolación bilineal.
-- **cutfreq**: Eliminar los colores menos frecuentes de la imagen.
-- **compress**: Comprimir la imagen usando un formato ficticio CPPM.
+- **info**: Retrieve image metadata.
+- **maxlevel**: Scale the number of intensity levels.
+- **resize**: Resize the image using bilinear interpolation.
+- **cutfreq**: Remove the least frequent colors from the image.
+- **compress**: Compress the image using a fictitious CPPM format.
 
-## Estructura del Proyecto
+## Project Structure
 
-El proyecto está dividido en varias carpetas para mejorar la modularidad y organización:
+The project is divided into several folders to improve modularity and organization:
 
-- **common/**: Contiene código compartido por ambas implementaciones.
-- **imgsoa/**: Código específico de la versión SOA.
-- **imgaos/**: Código específico de la versión AOS.
-- **utest-common/**: Pruebas unitarias para la biblioteca común.
-- **utest-imgsoa/**: Pruebas unitarias para la biblioteca SOA.
-- **utest-imgaos/**: Pruebas unitarias para la biblioteca AOS.
-- **ftest-soa/**: Pruebas funcionales de imtool-soa.
-- **ftest-aos/**: Pruebas funcionales de imtool-aos.
-- **imagesPPM/**: Contiene imágenes de prueba.
+- **common/**: Contains code shared by both implementations.
+- **imgsoa/**: Code specific to the SOA version.
+- **imgaos/**: Code specific to the AOS version.
+- **utest-common/**: Unit tests for the common library.
+- **utest-imgsoa/**: Unit tests for the SOA library.
+- **utest-imgaos/**: Unit tests for the AOS library.
+- **ftest-soa/**: Functional tests for imtool-soa.
+- **ftest-aos/**: Functional tests for imtool-aos.
+- **imagesPPM/**: Contains test images.
 
-## Compilación e Instalación
+## Compilation and Installation
 
-El proyecto utiliza CMake para su compilación. Para compilarlo, ejecuta los siguientes comandos en la raíz del proyecto:
+The project uses CMake for compilation. To compile, run the following commands from the project root:
 
 ```sh
 mkdir build
@@ -44,29 +44,28 @@ cmake ..
 make
 ```
 
-Esto generará los ejecutables `imtool-soa` y `imtool-aos`.
+This will generate the `imtool-soa` and `imtool-aos` executables.
 
-## Uso
+## Usage
 
-Para ejecutar la aplicación, usa el siguiente formato:
+To execute the application, use the following format:
 
 ```sh
-./imtool-<soa|aos> <input.ppm> <output.ppm> <operación> [parámetros]
+./imtool-<soa|aos> <input.ppm> <output.ppm> <operation> [parameters]
 ```
-
-Ejemplo de uso:
+Example usage:
 
 ```sh
 ./imtool-aos input.ppm output.ppm resize 200 150
 ```
 
-## Evaluación de Rendimiento y Energía
+## Performance and Energy Evaluation
 
-Se han realizado pruebas de rendimiento y consumo energético en el clúster Avignon, utilizando la herramienta `perf`.
+Performance and energy consumption tests have been conducted on the Avignon cluster using the `perf` tool.
 
-## Integrantes del Proyecto
+## Project Members
 
-- **Amina Errami Maslaoui**
 - **Alberto Sánchez del Álamo**
+- **Amina Errami Maslaoui**
 - **Martín Portugal González**
 - **George Jose Hallak Pita**
