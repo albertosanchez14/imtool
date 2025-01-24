@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is part of the Computer Architecture course at Universidad Carlos III de Madrid. It involves the development of an image processing application in PPM format, optimized for performance in C++20.
+This project is part of the Computer Architecture course at University Carlos III of Madrid. It involves the development of an image processing application in PPM format, optimized for performance in C++20.
 
 Two versions of the application have been developed:
 
